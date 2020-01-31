@@ -2,11 +2,20 @@ body{
 	user-select: none;
 	margin: 0;
 	padding: 0;	
-  font-family: 'Josefin Sans', sans-serif;
+ font-family: 'Open Sans', sans-serif;
+}
+
+@font-face{
+  font-family: ethnocentric;
+  src: url(../fonts/ethnocentric.ttf);
+}
+
+.title-index{
+  font-family: 'ethnocentric';
 }
 
 li a span.m-mobile{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
 }
 
@@ -28,7 +37,7 @@ body:before {
 section{
   overflow: hidden!important;
   background-position: center!important;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html,
@@ -54,7 +63,7 @@ header,
 
 .top-nav-collapse {
   transition: 0.5s;
-  background-image: linear-gradient(to right, #2E2E2E, #212121)!important;
+  background-image: linear-gradient(to right, #fafafa, #f5f5f5)!important;
   box-shadow: none;
 }
 
@@ -66,19 +75,18 @@ header,
 
 .nav-pills > li > a.active {
   background-color: transparent!important;
-  color: #fff!important;
-  border: 0px!important;
+  color: #01579b!important;
+  border-bottom: 2px solid #CC0000!important;
   border-radius: 0%!important;
   transform: scale(1.1);
   transition: 0.3s;
   font-weight: bold;
-  text-shadow: 0 0 15px #fff, 0 0 10px #fff;
 }
 
 .mobile-pills > li > a.active  {
   background-color: rgba(0,0,0,0.1)!important;
-  color: #2E2E2E!important;
-  border-left: 5px solid #2E2E2E!important;
+  color: #fff!important;
+  border-left: 5px solid #fff!important;
   border-radius: 0%!important;
   transition: 0.3s;
   width: 100%;
@@ -86,11 +94,13 @@ header,
 }
 
 .nav-link{
-  color: #fff!important;
+  color: #4B515D!important;
+  font-size: 15px;
+
 }
 
 .nav-link:hover{
-  color: #ddd!important;
+  color: #4B515D!important;
   transition: 0.2s!important;
 }
 
@@ -106,8 +116,8 @@ header,
 
 .navbar{}
 #nav-color{
-  background-color: rgba(0,0,0,0.2);
-  font-family: 'Josefin Sans', sans-serif;
+  background-image: linear-gradient(to right, #fafafa, #f5f5f5)!important;
+  font-family: 'Open Sans', sans-serif;
   transition: 0.2s;
 }
 
@@ -119,7 +129,7 @@ header,
   top: 0;
   left: 0;
   transition: 0.3s;
-  background-image: linear-gradient(to right, #e0e0e0, #bdbdbd);
+  background-image: linear-gradient(to right, #2E2E2E, #212121);
   /*
   overflow-y: scroll!important;
   */
@@ -127,7 +137,7 @@ header,
 
 .btn-menu {
   display: none;
-  color: #fff;
+  color: #0d47a1;
   float: left!important;
 }
 
@@ -204,7 +214,7 @@ header,
 #background-load{
   height:100%;
   width:100%;
-  background-image: linear-gradient(to right, #37474F, #263238);
+  background-image: linear-gradient(to right, #01579b, #4285F4);
   position:fixed;
   left:0;
   top:0;
